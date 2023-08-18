@@ -1,0 +1,13 @@
+Erstellen Sie ein Bestell-Formular für ein Wein-Online-Geschäft.
+Ergänzen Sie Ihr Formular mit JavaScript Funktionen, so dass folgende
+Funktionalität erreicht wird.
+-Die Felder mit dem Titel Flaschen dürfen nur Zahlen enthalten. Nutzen
+Sie dazu nicht das number-Eingabefeld.
+-Der Versand DHL darf nur auswählbar sein bzw. ausgewählt sein, wenn
+nicht mehr als 12 Flaschen bestellt werden.
+-Die Felder für den Preis müssen schreibgeschützt sein.
+-Je nach eingegebenen Flaschenzahlen sind die Felder für die Preise zu
+füllen. Die MwSt und die Summen sind entsprechend anzupassen.
+-Alle Preise sind auf zwei Nachkommastellen zu runden.
+Testen Sie Ihr Formular mit geeigneten Werten. Geben Sie sowohl Ihr
+HTML5– als auch Ihr JavaScript–Dokument ab.

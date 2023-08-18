@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="bestellTabelle">
+        <tr>
+            <th>Flaschen</th>
+            <th class="align-left">Weinname</th>
+            <th>Einzelpreis</th>
+            <th class="align-right">Preis</th>
+        </tr>
+    
+        <tr>
+            <td><input type="text" id="wein1" class="xs-input" onchange="updateValue(this)"></td>
+            <td class="align-left">Marienthaler Stiftsberg Rotweincuvee</td>
+            <td class="align-right" id="wein1_preis">3.60</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="wein1_summe" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="wein2" class="xs-input" onchange="updateValue(this)"></td>
+            <td class="align-left">Riesling Classic</td>
+            <td class="align-right" id="wein2_preis">3.70</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="wein2_summe" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="wein3" class="xs-input" onchange="updateValue(this)"></td>
+            <td class="align-left">Silvaner Selection Rheinhessen</td>
+            <td class="align-right" id="wein3_preis">6.90</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="wein3_summe" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="wein4" class="xs-input" onchange="updateValue(this)"></td>
+            <td class="align-left">Domäne Avelsbach Riesling Sekt</td>
+            <td class="align-right" id="wein4_preis">6.15</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="wein4_summe" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="versand" id="versand_dhl" class="xs-input"></td>
+            <td class="align-left">Versand DHL (bis 12 Flaschen)</td>
+            <td class="align-right">10</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="dhl_preis">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="versand" id="versand_spedition" class="xs-input"></td>
+            <td class="align-left">Versand Spedition</td>
+            <td class="align-right">15</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="spedition_preis">
+            </td>
+        </tr>
+        <tr>
+            <td class="align-right" colspan="3">Zwischensumme</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="zwischensumme">
+            </td>
+        </tr>
+        <tr>
+            <td class="align-right" colspan="3">MwSt</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="mwst" value="2.85">
+            </td>
+        </tr>
+        <tr>
+            <td class="align-right bold" colspan="3">Summe</td>
+            <td class="cell-small">
+                <input type="text" readonly="readonly" class="small-input" id="summe">
+            </td>
+        </tr>
+    </table>
+    <script src="Aufgabe_2.js"></script>    
+</body>
+</html>
